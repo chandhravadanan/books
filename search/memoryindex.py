@@ -38,7 +38,7 @@ class MemoryIndex:
             return word
 
         lastch = word[len(word)-1]
-        if lastch in ['.', ',', ')', ']']:
+        if lastch in ['.', ',', ')', ']', ':']:
             word = word[:-1]
 
         firstch = word[0]
@@ -50,6 +50,7 @@ class MemoryIndex:
     def index_words_inbook(self, bookinfo):
         bookid = bookinfo.get_bookid()
         sentence = bookinfo.get_actual_content()
+        sentence = bookinfo.get_title() + ' ' + sentence
         words = sentence.split()
         cur_pos = 0
         for word in words:

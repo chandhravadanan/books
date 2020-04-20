@@ -2,29 +2,18 @@
 
 Install the dependency using requirements.txt
 
-**
-
 > pip install -r requirements.txt
 
-**
 
 Note : Flask and Requests packages are the only dependencies.
 
 Run unittest
 
-**
-
 > python -m unittest -v
-
-**
 
 Run application
 
-**
-
 > python app.py
-
-**
 
 Memory Index API:
 
